@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#head">início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
@@ -23,28 +23,84 @@
       <h2 class="site-subtitle">Jr.Frontend Developer</h2>
     </div>    
   </header>
-  <section class = "portfolio"id="portfolio">
+  <section class="sobre container" id="sobre">
+    <h2>sobre</h2>
+    <figure class="avatar">
+      <img src="https://scontent.faqa4-1.fna.fbcdn.net/v/t31.0-8/26850842_1351064518330812_6689110132762035985_o.jpg?_nc_cat=106&_nc_sid=84a396&_nc_ohc=_mSjdad2osUAX_YahR7&_nc_ht=scontent.faqa4-1.fna&oh=9b61ad7b8441c17f4af68ac13f41d1e3&oe=5EE3173E" alt="Victor Hernández">
+    </figure>
+    <p>
+      Nome: Victor Hugo Hernández    
+    </p>
+
+    <p>
+      Idade: 25 anos  
+    </p>
+
+    <p>
+      Graduado em Tecnologia em Biocombustíveis, pelo IFSP - Matão, no ano de 2018.
+    </p>
+
+    <p>
+      Graduando em Análise e desenvolvimento de sistemas pelo IFSP - Araraquara, deste o ano de 2019.
+    </p>
+
+    <p>
+      Este site foi construido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS Alura</a>
+    </p>
+  </section>
+  <section class = "portfolio container"id="portfolio">
     <h2>Portfólio</h2>
-    <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+
+  <div class="grid">
+    <div class="flip-card">
+      <div class="card">
+        <figure class="card-front">
+          <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
         <figcaption>eCommerce</figcaption>
       </figure>
-      <figure>
+      <div class="card-back">
+        O e-commerce é um modelo de comércio que utiliza como base plataformas eletrônicas, como computadores, smartphones, tablets e etc.
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="card">
+      <figure class="card-front">
         <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
         <figcaption>Mobile</figcaption>
       </figure>
-      <figure>
+      <div class="card-back">
+        Uma plataforma mobile é um site construído com uma arquitetura totalmente voltada para se adaptar a qualquer aparelho móvel, seja ele um tablet ou um smartphone.
+      </div>
+    </div>
+  </div>
+
+    <div class="flip-card">
+    <div class="card">
+      <figure class="card-front">
         <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
         <figcaption>Web design</figcaption>
       </figure>
-      <figure>
+      <div class="card-back">
+        O web design é uma extensão da prática do design gráfico, onde o foco do projeto é a criação de web sites e documentos disponíveis no ambiente da World Wide Web.
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="card">
+      <figure class="card-front">
         <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
         <figcaption>Projetos pessoais</figcaption>
       </figure>
+      <div class="card-back">
+        Meus projetos pessoais
+      </div>
     </div>
+  </div>
   </section>
-  <section class="contato" id="contato">
+  <section class="contato container" id="contato">
     <h2>Contato</h2>
     <div class="grid icons">
       <a target="_blank" href="https://github.com/victorHernandez27">

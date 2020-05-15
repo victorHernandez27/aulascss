@@ -115,18 +115,65 @@ body{
     font-family: 'Press Start 2P', cursive;
     line-height: 1.8em;
   }
+
+  .sobre,
   .contato,
   .portfolio{
     padding: 2em;
     min-width: 100vh;
   }
 
+  @media (min-width:1200px){
+    .container{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+  }
+
+  .sobre h2,
   .contato h2,
   .portfolio h2{
     font-family: 'Source Code Pro', monospace;;
     color: honeydew;
     margin-bottom: 0.9em;
     font-size: 2em;
+  }
+
+  .sobre p{
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    text-indent: 1.5em;
+  }
+
+  .sobre a{
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+  .sobre a:hover{
+    background-color:rgb(4, 109, 136) ;
+    text-decoration: none;
+  }
+
+  .sobre .avatar img{
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+  }
+
+  .sobre .avatar{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    margin-right: 1em;    
+  }
+
+  @media (min-width:600px){
+    .sobre .avatar{
+      float: left;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
   }
 
   .portfolio .grid{
@@ -155,14 +202,46 @@ body{
   
   .img-portfolio{
     height: 180px;
-    width: 240px;
+    width: 100%;
     object-fit: cover;
     object-position: left bottom;
     transition: transform 500ms;
   }  
 
+  /*
   .img-portfolio:hover{
     transform: scale(1.2); 
+  }
+  */
+
+  .flip-card{
+    perspective: 500px;
+  }
+
+  .card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  .flip-card:hover .card{
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .car-back{
+    backface-visibility: hidden ;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+
+  .card-back{
+    background-color:rgb(3, 56, 70) ;
+    color: white;
+    height: 180px;
+    width: 100% ;
+    transform: rotateY(180deg);
   }
 
   .contato .icons{
